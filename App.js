@@ -3,6 +3,7 @@ import {Text, SafeAreaView} from "react-native"
 import ExampleComponent1 from "./components/ExampleComponent1"
 import ExampleComponent2 from "./components/ExampleComponent2"
 import ExampleUI from "./components/ExampleUI"
+import CollectionListScreen from "./screens/CollectionListScreen"
 
 
 class MainComponent extends React.Component{
@@ -12,7 +13,8 @@ class MainComponent extends React.Component{
                 {/* <ExampleComponent1 />
                 <ExampleComponent2 message="Hello Reginaldo" />
                 <ExampleComponent2 message="Hello Sofia" /> */}
-                <ExampleUI />
+                {/* <ExampleUI /> */}
+                <CollectionListScreen />
             </SafeAreaView>
         )
     }
