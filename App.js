@@ -2,8 +2,10 @@ import React from "react"
 import {Text, SafeAreaView} from "react-native"
 import ExampleComponent1 from "./components/ExampleComponent1"
 import ExampleComponent2 from "./components/ExampleComponent2"
+import ExampleComponent3 from "./components/ExampleComponent3"
 import ExampleUI from "./components/ExampleUI"
 import CollectionListScreen from "./screens/CollectionListScreen"
+import SearchCollections from "./components/SearchCollections"
 
 
 class MainComponent extends React.Component{
@@ -14,7 +16,9 @@ class MainComponent extends React.Component{
                 <ExampleComponent2 message="Hello Reginaldo" />
                 <ExampleComponent2 message="Hello Sofia" /> */}
                 {/* <ExampleUI /> */}
-                <CollectionListScreen />
+                {/* <CollectionListScreen /> */}
+                <ExampleComponent3 />
+                {/* <SearchCollections /> */}
             </SafeAreaView>
         )
     }
