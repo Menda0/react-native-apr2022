@@ -27,7 +27,9 @@ class ExampleComponent3 extends React.Component {
     incrementCounter(){
 
         // This function alters the state
-        const newState = {counter:this.state.counter+1}
+        const newState = {
+            counter:this.state.counter+1
+        }
         // State is change assync
         this.setState(newState)
     }
