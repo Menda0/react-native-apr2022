@@ -4,6 +4,7 @@ import ExampleComponent1 from "./components/ExampleComponent1"
 import ExampleComponent2 from "./components/ExampleComponent2"
 import ExampleComponent3 from "./components/ExampleComponent3"
 import ExampleComponent4 from "./components/ExampleComponent4"
+import ExampleComponent5 from "./components/ExampleComponent5"
 import ExampleUI from "./components/ExampleUI"
 import CollectionListScreen from "./screens/CollectionListScreen"
 import SearchCollections from "./components/SearchCollections"
@@ -20,7 +21,8 @@ class MainComponent extends React.Component{
                 {/* <CollectionListScreen /> */}
                 {/* <ExampleComponent3 /> */}
                 {/* <SearchCollections /> */}
-                <ExampleComponent4 name="Marco"/>
+                {/* <ExampleComponent4 name="Marco"/> */}
+                <ExampleComponent5 />
             </SafeAreaView>
         )
     }
