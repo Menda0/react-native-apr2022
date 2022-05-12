@@ -8,24 +8,31 @@ import ExampleComponent5 from "./components/ExampleComponent5"
 import ExampleUI from "./components/ExampleUI"
 import CollectionListScreen from "./screens/CollectionListScreen"
 import SearchCollections from "./components/SearchCollections"
+import AppNavigation from "./AppNavigation"
 
 
 class MainComponent extends React.Component{
     render(){
         return (
-            <SafeAreaView>
-                {/* <ExampleComponent1 />
-                <ExampleComponent2 message="Hello Reginaldo" />
-                <ExampleComponent2 message="Hello Sofia" /> */}
-                {/* <ExampleUI /> */}
-                {/* <CollectionListScreen /> */}
-                {/* <ExampleComponent3 /> */}
-                {/* <SearchCollections /> */}
-                {/* <ExampleComponent4 name="Marco"/> */}
-                <ExampleComponent5 />
-            </SafeAreaView>
+            <>
+                {/*
+                    <SafeAreaView>
+                        {/* <ExampleComponent1 />
+                        <ExampleComponent2 message="Hello Reginaldo" />
+                        <ExampleComponent2 message="Hello Sofia" />
+                        <ExampleUI />
+                        <CollectionListScreen />
+                        <ExampleComponent3 />
+                        <SearchCollections />
+                        <ExampleComponent4 name="Marco"/> 
+                        <ExampleComponent5 />
+                    </SafeAreaView>
+                */}
+                <AppNavigation />
+            </>
         )
     }
 }
+
 
 export default MainComponent
