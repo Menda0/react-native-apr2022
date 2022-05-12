@@ -1,15 +1,33 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { createNativeStackNavigator} from "@react-navigation/native-stack";
 import ExampleScreen from "./screens/ExampleScreen";
 import Icon from "react-native-vector-icons/FontAwesome";
+import ExampleComponent1Screen from "./screens/ExampleComponent1Screen";
+import ExampleUiScreen from "./screens/ExampleUiScreen";
+
+const Stack = createNativeStackNavigator()
+
+const ExampleStack = () => {
+    return (
+        <Stack.Navigator>
+            <Stack.Screen name="Examples" component={ExampleScreen} />
+            <Stack.Screen name="ExampleComponent1" component={ExampleComponent1Screen} />
+            <Stack.Screen name="ExampleUi" component={ExampleUiScreen} />
+        </Stack.Navigator>
+    )
+}
 
 const Tab = createBottomTabNavigator()
-
 const AppNavigation = (props) => {
     return (
         <NavigationContainer>
-            <Tab.Navigator>
+            <Tab.Navigator
+                screenOptions={{
+                    headerShown: false
+                }}
+            >
                 <Tab.Screen 
                     options={{
                         tabBarIcon: ({size, color}) => {
@@ -17,7 +35,7 @@ const AppNavigation = (props) => {
                         }
                     }}
                     name="Home" 
-                    component={ExampleScreen}
+                    component={ExampleStack}
                 />
                 <Tab.Screen 
                     options={{
