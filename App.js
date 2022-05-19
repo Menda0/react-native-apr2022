@@ -9,12 +9,14 @@ import ExampleUI from "./components/ExampleUI"
 import CollectionListScreen from "./screens/CollectionListScreen"
 import SearchCollections from "./components/SearchCollections"
 import AppNavigation from "./AppNavigation"
+import {Provider} from "react-redux"
+import store from "./store"
 
 
 class MainComponent extends React.Component{
     render(){
         return (
-            <>
+            <Provider store={store}>
                 {/*
                     <SafeAreaView>
                         {/* <ExampleComponent1 />
@@ -29,7 +31,7 @@ class MainComponent extends React.Component{
                     </SafeAreaView>
                 */}
                 <AppNavigation />
-            </>
+            </Provider>
         )
     }
 }

@@ -6,6 +6,7 @@ import ExampleScreen from "./screens/ExampleScreen";
 import Icon from "react-native-vector-icons/FontAwesome";
 import ExampleComponent1Screen from "./screens/ExampleComponent1Screen";
 import ExampleUiScreen from "./screens/ExampleUiScreen";
+import ExampleScreen6 from "./screens/ExampleScreen6"
 
 const Stack = createNativeStackNavigator()
 
@@ -15,6 +16,7 @@ const ExampleStack = () => {
             <Stack.Screen name="Examples" component={ExampleScreen} />
             <Stack.Screen name="ExampleComponent1" component={ExampleComponent1Screen} />
             <Stack.Screen name="ExampleUi" component={ExampleUiScreen} />
+            <Stack.Screen name="ExampleScreen6" component={ExampleScreen6} />
         </Stack.Navigator>
     )
 }
