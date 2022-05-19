@@ -24,7 +24,7 @@ const useCollections = () => {
     // 1. Get with axios https://api.opensea.io/api/v1/collections?offset=0&limit=10
     // 2. Get colletions from axios promise response
     // 3. SET_COLECTIONS, set my nft collections inside our store 
-    loadNFTCollections(offset, limit){
+    const loadNFTCollections = (offset, limit){
         axios
             .get("https://api.opensea.io/api/v1/collections?offset=0&limit=10")
             .then((response) => {
